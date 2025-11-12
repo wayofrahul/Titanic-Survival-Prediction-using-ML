@@ -33,15 +33,14 @@ st.set_page_config(
 # ----------------------------
 st.markdown(
     """
-# Titanic Survival Prediction App
-
-Predict whether a passenger would have survived the Titanic tragedy based on their details.
-
-* * *
-""",
-    unsafe_allow_html=True,
+    <div style="text-align:center">
+        <h1 style="color:#0077b6;">🚢 Titanic Survival Prediction App</h1>
+        <p style="font-size:18px; color:#555;">Predict whether a passenger would have survived the Titanic tragedy based on their details.</p>
+        <hr style="border:1px solid #0077b6">
+    </div>
+    """,
+    unsafe_allow_html=True
 )
-
 # ----------------------------
 # Sidebar Inputs
 # ----------------------------
@@ -81,7 +80,7 @@ input_df = pd.DataFrame(
 
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    if st.button("Predict Survival"):
+    if st.button("🎯Predict Survival"):
         if model is None:
             st.error("Model is not loaded. Check earlier error messages.")
         else:
@@ -105,7 +104,7 @@ with col2:
 st.markdown(
     """
 * * *
-Developed By Rahul !! | Titanic Survival Prediction Using ML
+Developed By Rahul❤️  !! | Titanic Survival Prediction Using ML
 """,
     unsafe_allow_html=True,
 )
@@ -120,6 +119,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 
