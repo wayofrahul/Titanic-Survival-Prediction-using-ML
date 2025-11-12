@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 from PIL import Image
-from streamlit_lottie import st_lottie
+
 import requests
 
 # ----------------------------
@@ -110,17 +110,7 @@ Developed By Rahul !! | Titanic Survival Prediction Using ML
     unsafe_allow_html=True,
 )
 
-def load_lottie(url):
-    try:
-        r = requests.get(url, timeout=5)
-        if r.status_code == 200:
-            return r.json()
-    except Exception:
-        return None
-    return None
 
-lottie_ship = load_lottie("https://assets7.lottiefiles.com/packages/lf20_xlkxtmul.json")
-if lottie_ship:
-    st_lottie(lottie_ship, height=200)
+
 
 
